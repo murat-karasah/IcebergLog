@@ -38,7 +38,7 @@ IcebergLog is offered in two versions: **Community Edition** (Open Source) and *
 ## 📥 Installation & Setup
 ### **1️⃣ Clone the repository**
 ```sh
-git clone https://github.com/yourusername/IcebergLog-Community.git
+git clone https://github.com/murat-karasah/IcebergLog-Community.git
 cd IcebergLog-Community
 ```
 ### **2️⃣ Install dependencies**
