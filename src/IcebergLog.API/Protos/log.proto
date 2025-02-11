@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "IcebergLog.API.gRPC";
+
+service LogService {
+    rpc WriteLog (LogRequest) returns (LogResponse);
+}
+
+message LogRequest {
+    string level = 1;
+    string message = 2;
+    string source = 3;
+}
+
+message LogResponse {
+    bool success = 1;
+    string message = 2;
+}

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.29.3" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.67.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.69.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MongoDB.Driver" Version="3.1.0" />
+    <PackageReference Include="NEST" Version="7.17.5" />
+    <PackageReference Include="Npgsql" Version="9.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+	<ItemGroup>
+		<Protobuf Include="Protos\log.proto" GrpcServices="Server" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+    <ProjectReference Include="..\IcebergLog.Core\IcebergLog.Core.csproj" />
+    <ProjectReference Include="..\IcebergLog.Elasticsearch\IcebergLog.Elasticsearch.csproj" />
+    <ProjectReference Include="..\IcebergLog.MongoDB\IcebergLog.MongoDB.csproj" />
+    <ProjectReference Include="..\IcebergLog.PostgreSQL\IcebergLog.PostgreSQL.csproj" />
+  </ItemGroup>
+
+
+	<ItemGroup>
+	  <Folder Include="Controllers\" />
+	</ItemGroup>
+
+</Project>
