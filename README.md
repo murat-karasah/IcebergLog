@@ -1,4 +1,4 @@
-# IcebergLog Open Core Model
+# IcebergLog Community Repository
 
 IcebergLog is a high-performance, multi-database log management library designed for .NET applications. It supports multiple storage backends such as MongoDB, PostgreSQL, and Elasticsearch. Additionally, it provides structured logging and real-time log processing.
 
